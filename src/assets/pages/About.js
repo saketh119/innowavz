@@ -1,9 +1,9 @@
 // src/pages/About.jsx
 import React from 'react';
 import Hero from '../components/sections/Hero';
-import AboutSection from '../components/sections/About';
+
 import Facts from '../components/sections/Facts';
-import Team from '../components/sections/Team';
+import Team from './Team';
 
 const About = () => {
   const breadcrumbs = [

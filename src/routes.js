@@ -1,12 +1,12 @@
 // src/routes.js
-import Home from './pages/Home';
-import About from './pages/About';
-import Services from './pages/Services';
-import Projects from './pages/Projects';
-import Team from './pages/Team';
-import Testimonials from './pages/Testimonials';
-import Contact from './pages/Contact';
-import NotFound from './pages/NotFound';
+import Home from './assets/pages/Home';
+import About from './assets/pages/About';
+import Services from './assets/pages/Services';
+import Projects from './assets/pages/Contact';
+import Team from './assets/pages/Team';
+import Testimonials from './assets/pages/Testimonials';
+import Contact from './assets/pages/projects';
+import NotFound from './assets/pages/NotFound';
 
 const routes = [
   { path: '/', element: <Home /> },

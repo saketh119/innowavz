@@ -1,14 +1,14 @@
 // src/pages/Home.jsx
 import React from 'react';
 import Hero from '../components/sections/Hero';
-import About from '../components/sections/About';
-import Services from '../components/sections/Services';
+import About from './About';
+import Services from './Services';
 import Features from '../components/sections/Features';
-import Facts from '../components/sections/Facts';
-import Projects from '../components/sections/Projects';
-import Testimonials from '../components/sections/Testimonials';
-import Team from '../components/sections/Team';
-import Newsletter from '../components/sections/Newsletter';
+
+import Projects from './projects';
+import Testimonials from './Testimonials';
+import Team from './Team';
+
 
 const Home = () => {
   return (
