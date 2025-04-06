@@ -1,0 +1,211 @@
+// src/assets/css/main.scss
+// Variables
+$primary: #0d6efd;
+$secondary: #6c757d;
+$dark: #212529;
+$light: #f8f9fa;
+$white: #ffffff;
+
+// Mixins
+@mixin transition($property: all, $duration: 0.3s, $ease: ease-in-out) {
+  transition: $property $duration $ease;
+}
+
+// Base styles
+body {
+  font-family: 'Heebo', sans-serif;
+  color: $dark;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+}
+
+.section-title {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  
+  &::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background: $primary;
+  }
+  
+  &::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    left: -55px;
+    margin-top: -1px;
+    background: $primary;
+  }
+  
+  span {
+    position: relative;
+    background: $white;
+    padding: 0 5px;
+    z-index: 1;
+  }
+}
+
+// Hero styles
+.hero-header {
+  background: linear-gradient(rgba(13, 110, 253, 0.9), rgba(13, 110, 253, 0.9)), 
+              url('../images/hero-bg.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+// Service card styles
+.service-item {
+  height: 100%;
+  padding: 30px;
+  @include transition();
+  
+  .service-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    background: $primary;
+    color: $white;
+    margin: 0 auto 25px auto;
+  }
+  
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+}
+
+// Animation classes
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  animation-name: slideInDown;
+}
+/* Footer Styles */
+.footer {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .footer .btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #ffffff;
+    font-weight: normal;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  
+  .footer .btn-link:hover {
+    color: var(--primary);
+    text-decoration: underline;
+  }
+  
+  .footer .btn-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin-right: 5px;
+  }
+  
+  .section-title {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .section-title span::before,
+  .section-title span::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background: var(--primary);
+  }
+  
+  .section-title span::before {
+    left: -55px;
+  }
+  
+  /* Spinner Styles */
+  #spinner {
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .spinner-grow {
+    animation: spinner-grow 1.5s linear infinite;
+  }
+  
+  @keyframes spinner-grow {
+    0% {
+      transform: scale(0.8);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.8);
+      opacity: 0.5;
+    }
+  }
+  
+  /* Back to Top Styles */
+  .back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+  }
+  
+  .back-to-top button {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+  
+  .back-to-top button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
