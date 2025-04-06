@@ -4,11 +4,12 @@ import Hero from '../components/sections/Hero';
 import About from './About';
 import Services from './Services';
 import Features from '../components/sections/Features';
-
+import Facts from '../components/sections/Facts';
 import Projects from './projects';
 import Testimonials from './Testimonials';
 import Team from './Team';
-
+import Newsletter from '../components/Newsletter';
+import AboutSection from '../components/AboutSection';
 
 const Home = () => {
   return (

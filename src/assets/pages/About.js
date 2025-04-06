@@ -1,7 +1,7 @@
 // src/pages/About.jsx
 import React from 'react';
 import Hero from '../components/sections/Hero';
-
+import AboutSection from '../components/AboutSection';
 import Facts from '../components/sections/Facts';
 import Team from './Team';
 
