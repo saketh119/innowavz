@@ -9,7 +9,7 @@ import Projects from './projects';
 import Testimonials from './Testimonials';
 import Team from './Team';
 import Newsletter from '../components/Newsletter';
-import AboutSection from '../components/AboutSection';
+
 
 const Home = () => {
   return (

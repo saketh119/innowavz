@@ -2,14 +2,14 @@ import React from 'react';
 import ServiceCard from '../ui/ServiceCard';
 import { 
   faCogs, 
-  faBrain, 
-  faUsersCog,
-  faNetworkWired,
-  faIndustry,
-  faMicrochip,
-  faPaintBrush,
-  faRobot,
-  faServer
+  // faBrain, 
+  // faUsersCog,
+  // faNetworkWired,
+  // faIndustry,
+  // faMicrochip,
+  // faPaintBrush,
+  // faRobot,
+  // faServer
 } from '@fortawesome/free-solid-svg-icons';
 
 const ServicesList = () => {

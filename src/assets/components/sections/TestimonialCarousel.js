@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import TestimonialCard from '../ui/TestimonialCard';
+
 import { FaQuoteLeft } from 'react-icons/fa';
 
 const TestimonialCarousel = ({ testimonials }) => {

@@ -11,7 +11,7 @@ import {
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
+  //const currentYear = new Date().getFullYear();
 
   return (
     <div className="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">

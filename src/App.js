@@ -5,7 +5,7 @@ import Header from './assets/components/common/Header';
 import Footer from './assets/components/common/Footer';
 import Spinner from './assets/components/common/Spinner';
 import BackToTop from './assets/components/common/BackToTop';
-import './assets/css/main.css';
+import './assets/css/main.scss';
 
 function App() {
   return (
