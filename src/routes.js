@@ -2,10 +2,10 @@
 import Home from './assets/pages/Home';
 import About from './assets/pages/About';
 import Services from './assets/pages/Services';
-import Projects from './assets/pages/Contact';
+import Contact from './assets/pages/Contact';
 import Team from './assets/pages/Team';
 import Testimonials from './assets/pages/Testimonials';
-import Contact from './assets/pages/projects';
+import Projects from './assets/pages/projects';
 import NotFound from './assets/pages/NotFound';
 
 const routes = [

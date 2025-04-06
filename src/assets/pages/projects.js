@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Hero from '../components/sections/Hero';
 
 import ProjectGallery from '../components/sections/ProjectGallery';
 
 const Projects = () => {
-  const [filter, setFilter] = useState('*');
+  const filter = '*';
+
   
   const projects = [
     {
